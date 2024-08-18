@@ -40,6 +40,7 @@ func NewBadRequestValidationError(message string, causes []Causes) *RestErr {
 		Message: message,
 		Err:     "bad_request",
 		Code:    http.StatusBadRequest,
+		Causes:  causes,
 	}
 }
 
